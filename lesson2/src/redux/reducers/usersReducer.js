@@ -11,7 +11,7 @@ export default function usersReducer(state=initialState, action){
     }else if(action.type===types.ADD){
         return{...state, users: [...state.users, action.payload], value: ''}
     }else if(action.type===types.DELETE){
-        return{...state, users: []}
+        return{...state, users: [], value: ''}
     }
     return state
 }

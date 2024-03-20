@@ -6,7 +6,7 @@ import User from '../../components/user/User'
 
 function UsersPage() {
   const dispatch=useDispatch()
-  const {users, value}=useSelector(state=>usersReducer)
+  const {users, value}=useSelector(state=>state.usersReducer)
 
   const changeInput=(event)=>{
     dispatch(changeInputAction(event.target.value))
@@ -22,7 +22,7 @@ function UsersPage() {
 
   return (
     <div>
-        <input onChange={changeInput} type='text' placeholder='name'/>
+        <input value={value} onChange={changeInput} type='text' placeholder='name'/>
         <button onClick={addUser}>add</button>
         <button onClick={deleteAll} >delete all</button>
 

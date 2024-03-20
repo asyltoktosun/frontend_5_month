@@ -33,3 +33,30 @@ export function deleteUserAction(){
         type: types.DELETE
     }
 }
+
+
+export function plusInputAction(value){
+    return{
+        type: types.PLUS,
+        payload:value
+    }
+}
+export function minusInputAction(value){
+    return{
+        type: types.MINUS,
+        payload:value
+    }
+}
+export function multiplyInputAction(value){
+    return{
+        type: types.MULTIPLY,
+        payload:value
+    }
+}
+export function divideInputAction(value){
+    return{
+        type: types.DIVIDE,
+        payload:value
+    }
+}
+
