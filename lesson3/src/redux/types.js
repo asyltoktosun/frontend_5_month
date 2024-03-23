@@ -8,6 +8,7 @@ export const types={
     MINUS: 'MINUS',
     MULTIPLY: 'MULTIPLY',
     DIVIDE: 'DIVIDE',
-    USERS: 'USERS'
+    USERS: 'USERS',
+    USER_1: 'USER_1'
 
 }

@@ -8,18 +8,17 @@ import User from '../../components/user/User'
 function UsersPage() {
 
   const dispatch=useDispatch()
-  const usersState=useSelector(state=>state.usersReducer.users)
+  const usersState = useSelector(state => state.usersReducer)
+  const { users } = usersState || {}
+  console.log(users);
 
   useEffect(()=>{
     dispatch(fetchUserAction()) 
-  },[])
-  const users = usersState && usersState.users;
+  }, [dispatch])
 
-
-  console.log(users);
 
   return (
-    <div>
+    <div style={{display: 'flex', flexWrap: 'wrap', gap:'10px'}}>
         {users && users.map(userInfo => <User key={userInfo.id} userInfo={userInfo}/>)}
     </div>
   )
