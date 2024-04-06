@@ -10,8 +10,9 @@ function Menu() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                    <NavLink to="/" className="me-2">register user</NavLink>
-                    <NavLink to="/users">users list</NavLink>
+                    <NavLink to="/" className="me-2">Register user</NavLink>
+                    <NavLink to="/users">Users list</NavLink>
+                    <NavLink to="/register"> Register</NavLink>
                 </Nav>
             </Navbar.Collapse>
         </Container>
