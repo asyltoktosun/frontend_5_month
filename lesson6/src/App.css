@@ -1,0 +1,9 @@
+.App{
+    text-align: center;
+}
+
+.mySwiper{
+    height: 400px !important;
+    width: 500px;
+    margin: 100px auto;
+}

@@ -46,10 +46,6 @@ function UserRegisterPage() {
     }
 
 
-
-    
-
-
   return (
     <Container>
         {preloader ? 

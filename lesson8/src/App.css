@@ -1,0 +1,92 @@
+.App{
+    text-align: center;
+}
+
+.mySwiper{
+    height: 600px;
+    width: 600px;
+    margin: 100px auto;
+}
+
+.largeContainer,
+.midContainer,
+.smallContainer{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.largeContainer{
+    max-width: 1240px;
+}
+.midContainer{
+    max-width: 1044px;
+}
+.smallContainer{
+    max-width: 926px;
+}
+
+.primaryButton,
+.outLinedButton,
+.deleteButton{
+    overflow: hidden;
+    padding: 12px 32px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 160%;
+    border: 2px solid rebeccapurple;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    transition: .2s ease;
+}
+
+.primaryButton,
+.outLinedButton,
+.deleteButton:focus{
+    opacity: .9;
+}
+
+.deleteButton{
+    background-color: #ffe8e8;
+    border: 1px solid red;
+    color: red;
+}
+
+.deleteButton:hover{
+    background-color: #f41414;
+    color: #fff;
+}
+
+.primaryButton{
+    background-color: forestgreen;
+    color: wheat;
+}
+
+.primaryButton:hover{
+    background-color: gold;
+}
+
+.outLinedButton{
+    color: black;
+    background-color: #fff;
+
+    .disabled:hover,
+    .disabled:focus{
+        color: gray;
+        background-color: #fff;
+        border: 2px solid grey;
+    }
+}
+
+
+.outLinedButton:hover{
+    color: white;
+    background-color: aqua;
+}
+
+.disabled{
+    opacity: .7 !important;
+    color: grey;
+}
